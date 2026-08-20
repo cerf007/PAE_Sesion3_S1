@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="150.0" prefWidth="303.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="ni.edu.uam.sesion3.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" text="Analizadora de numeros" textFill="#ff6d6d">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font></Label>
+   <Label text="Ingresa 10 numeros enteros" textFill="#06021c" />
+   <TextField fx:id="txtNumber" />
+   <Label fx:id="lblSerieCompleta" text="Serie de Numeros: " />
+    <Button fx:id="btnAgregar" onAction="#onCalcClick" text="Agregar" />
+   <Label fx:id="lblMax" text="0" />
+   <Label fx:id="lblMin" text="0" />
+   <Label fx:id="lblAvg" text="0" />
+   <Label fx:id="lblRest" text="0" />
+   <Label fx:id="lblPair" text="0" />
+   <Label fx:id="lblOdds" text="0" />
+</VBox>
