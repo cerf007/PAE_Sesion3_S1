@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="409.0" prefWidth="277.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.ejercicio2.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" text="Busqueda en arreglos" textFill="#dd1d1d">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font></Label>
+   <TextField fx:id="txtTamano" onAction="#onSetTamanoClick" />
+   <Button fx:id="btnTamano" mnemonicParsing="false" onAction="#onSetTamanoClick" text="Definir Tamaño" />
+   <TextField fx:id="txtNumber" onAction="#onAddClick" />
+    <Button onAction="#onAddClick" text="Agregar" />
+   <TextField fx:id="txtSearch" onAction="#onSearchClick" />
+   <Button mnemonicParsing="false" onAction="#onSearchClick" text="Buscar" />
+   <Button mnemonicParsing="false" onAction="#onResetClick" text="Reset" />
+   <Label fx:id="lblSerie" />
+   <Label fx:id="lblExiste" />
+   <Label fx:id="lblPosicion" />
+   <Label fx:id="lblConteo" />
+   <Label fx:id="lblMensaje" />
+</VBox>
