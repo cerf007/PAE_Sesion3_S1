@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ni.edu.uam.ejercicio6.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="lblTittle" text="Agenda de Contactos"/>
+    <TextField fx:id="txtNombre" promptText="Nombre" />
+    <TextField fx:id="txtTelefono" promptText="Teléfono (8 dígitos)" />
+    <TextField fx:id="txtCorreo" promptText="Correo" />
+    <Button text="Agregar Contacto" onAction="#onAgregarClick" />
+
+    <TextField fx:id="txtBuscar" promptText="Buscar o Eliminar por Teléfono/Nombre" />
+    <Button text="Buscar" onAction="#onBuscarClick" />
+    <Button text="Eliminar" onAction="#onEliminarClick" />
+
+    <Label fx:id="lblCantidad" text=""/>
+    <Label fx:id="lblResultadoBusqueda" text=""/>
+    <Label fx:id="lblListaCompleta" text=""/>
+    <Label fx:id="lblMensaje" text=""/>
+
+
+
+
+
+
+
+</VBox>
