@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ni.edu.uam.ejercicio18.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Sistema de Gestión de Turnos"/>
+
+    <HBox alignment="CENTER" spacing="8.0">
+        <TextField fx:id="txtNombre" promptText="Nombre del cliente" prefWidth="220.0"/>
+        <Button text="Registrar Cliente" onAction="#onRegistrarClick"/>
+        <Button text="Atender Siguiente" onAction="#onAtenderClick"/>
+    </HBox>
+
+    <HBox alignment="TOP_CENTER" spacing="20.0">
+        <VBox alignment="TOP_LEFT" spacing="5.0" prefWidth="250.0">
+            <Label text="Clientes Pendientes (Cola):"/>
+            <Label fx:id="lblPendientes" text="No hay clientes en espera." wrapText="true"/>
+        </VBox>
+
+        <VBox alignment="TOP_LEFT" spacing="5.0" prefWidth="250.0">
+            <Label text="Historial de Atendidos (Lista):"/>
+            <Label fx:id="lblHistorial" text="Aún no se ha atendido a ningún cliente." wrapText="true"/>
+        </VBox>
+    </HBox>
+
+    <VBox alignment="CENTER_LEFT" spacing="4.0">
+        <Label fx:id="lblSiguiente" text="Siguiente en turno: Ninguno"/>
+        <Label fx:id="lblTotales" text="En espera: 0 | Atendidos: 0"/>
+    </VBox>
+
+    <Label fx:id="lblMensaje" text=""/>
+
+</VBox>
