@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ni.edu.uam.ejercicio17.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Sistema de Biblioteca (UUID Automático)"/>
+
+    <TextField fx:id="txtTitulo" promptText="Título del libro" />
+    <TextField fx:id="txtAutor" promptText="Autor del libro" />
+
+    <Button text="Registrar Libro" onAction="#onRegistrarClick"/>
+
+    <HBox alignment="CENTER" spacing="8.0">
+        <TextField fx:id="txtCodigoAccion" promptText="Código (para Buscar/Prestar/Devolver)" prefWidth="260.0"/>
+        <Button text="Buscar" onAction="#onBuscarClick"/>
+        <Button text="Prestar" onAction="#onPrestarClick"/>
+        <Button text="Devolver" onAction="#onDevolverClick"/>
+    </HBox>
+
+    <Label text="Catálogo de Libros:"/>
+    <Label fx:id="lblListaLibros" text="No hay libros registrados en la biblioteca." wrapText="true"/>
+
+    <VBox alignment="CENTER_LEFT" spacing="4.0">
+        <Label fx:id="lblTotal" text="Total de libros: 0"/>
+        <Label fx:id="lblDisponibles" text="Libros disponibles: 0"/>
+    </VBox>
+
+    <Label fx:id="lblMensaje" text=""/>
+
+</VBox>
